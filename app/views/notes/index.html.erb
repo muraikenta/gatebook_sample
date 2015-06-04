@@ -4,9 +4,7 @@
     <li>
       <p>タイトル</p>
       <span class="content">
-        <!-- showアクションへのリンクに書き換えてください -->
-        <%= note.title %>
-        
+        <%= link_to note.title, note_path(note.id) %>
       </span>
     </li>
   <% end %>

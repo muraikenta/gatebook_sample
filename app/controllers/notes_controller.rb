@@ -13,7 +13,8 @@ class NotesController < ApplicationController
     @notes = Note.all
   end
   
-  # showアクションを追加してください
-  
+  def show
+    @note = Note.find(params[:id])
+  end
   
 end
