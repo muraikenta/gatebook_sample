@@ -22,4 +22,7 @@ class NotesController < ApplicationController
     @note = Note.find(params[:id])
   end
   
+  # updateアクションを追加してください
+  
+  
 end

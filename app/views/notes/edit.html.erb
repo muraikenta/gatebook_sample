@@ -1,6 +1,7 @@
 <h1>投稿を編集する</h1>
+<!-- 送信先とmethodを指定してください -->
 <%= form_tag do %>
-  <%= text_field_tag :title, @note.title %>
-  <%= text_area_tag :content, @note.content %>
+  <%= text_field_tag :title, @note.title, class: "form-control title-field" %>
+  <%= text_area_tag :content, @note.content, class: "form-control content-field" %>
   <%= submit_tag "保存" %>
 <% end %>
