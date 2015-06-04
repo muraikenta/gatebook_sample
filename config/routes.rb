@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   get 'notes/new'
   post '/notes' => 'notes#create'
-  # indexアクションのルーティングを設定してください
-  
+  get '/notes' => 'notes#index'
 
   root 'home#top'
   get 'about' => 'home#about'

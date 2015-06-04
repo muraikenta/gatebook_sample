@@ -9,7 +9,8 @@ class NotesController < ApplicationController
     @note.save
   end
   
-  # indexアクションを追加してください
-  
+  def index
+    @notes = Note.all
+  end
   
 end
