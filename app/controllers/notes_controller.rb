@@ -13,4 +13,7 @@ class NotesController < ApplicationController
     @notes = Note.all
   end
   
+  # showアクションを追加してください
+  
+  
 end
