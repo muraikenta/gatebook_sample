@@ -9,4 +9,7 @@ class NotesController < ApplicationController
     @note.save
   end
   
+  # indexアクションを追加してください
+  
+  
 end
