@@ -3,14 +3,10 @@ class NotesController < ApplicationController
   end
   
   def create
-    # Noteクラスのインスタンスを生成し、変数@noteに代入してください
-    
-    # セッターを用いて、フォームから受け取った値をセットしてください
-    
-    
-    # saveメソッドでデータベースに保存してください
-    
-    
+    @note = Note.new
+    @note.title = params[:title]
+    @note.content = params[:content]
+    @note.save
   end
   
 end
