@@ -30,4 +30,7 @@ class NotesController < ApplicationController
     redirect_to note_path(@note.id)
   end
   
+  # destroyアクションを追加してください
+  
+  
 end
