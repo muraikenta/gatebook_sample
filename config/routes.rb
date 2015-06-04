@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'notes/new'
+  # notesコントローラのcreateアクションへのルーティングを設定してください
+  
 
   root 'home#top'
   get 'about' => 'home#about'

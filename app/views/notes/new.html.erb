@@ -1,8 +1,11 @@
 <h1>新規投稿する</h1>
+<!-- form_tagヘルパーに送信先のURLを指定してください -->
 <%= form_tag do %>
   タイトル
+  <!-- <input>タグにname属性を指定してください -->
   <input type="text" class="form-control title-field">
   内容
+  <!-- <textarea>タグにname属性を指定してください -->
   <textarea class="form-control content-field"></textarea>
   <input type="submit" value="投稿する" class="btn primary-btn">
 <% end %>
