@@ -7,5 +7,4 @@ class NotesController < ApplicationController
     @content = params[:content]
   end
   
-  
 end
