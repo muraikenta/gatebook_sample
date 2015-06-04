@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- <title>タグの中身をかきかえてください -->
   <title>Gatebook</title>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <!-- ここにヘッダーを書いてください -->
+  
+  
+  <!-- <div>タグで囲い、containerクラスをつけてください -->
+  <%= yield %>
+  
+  <!-- ここにフッターを貼り付けてください -->
+  
 
 </body>
 </html>
