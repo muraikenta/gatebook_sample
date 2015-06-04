@@ -2,7 +2,10 @@ class NotesController < ApplicationController
   def new
   end
   
-  # crateアクションを作成してください
+  def create
+    @title = params[:title]
+    @content = params[:content]
+  end
   
   
 end
