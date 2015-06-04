@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# 「hirb」というgemを追加してください
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
