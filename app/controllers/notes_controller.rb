@@ -7,8 +7,7 @@ class NotesController < ApplicationController
     @note.title = params[:title]
     @note.content = params[:content]
     @note.save
-    # showアクションにリダイレクトしてください
-    
+    redirect_to note_path(@note.id)
   end
   
   def index
