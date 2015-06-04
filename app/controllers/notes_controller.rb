@@ -18,7 +18,8 @@ class NotesController < ApplicationController
     @note = Note.find(params[:id])
   end
   
-  # editアクションを追加してください
-  
+  def edit
+    @note = Note.find(params[:id])
+  end
   
 end
