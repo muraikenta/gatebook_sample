@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'notes/new' => 'notes#new'
-  post 'notes' => 'notes#create'
+  get '/notes/new' => 'notes#new'
+  post '/notes' => 'notes#create'
 
   root 'home#top'
-  get 'about' => 'home#about'
+  get '/about' => 'home#about'
   
 end
