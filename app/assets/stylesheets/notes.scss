@@ -46,21 +46,8 @@
 /* フォーム================================ */
 input, textarea {
   border: 1px solid #bbb;
-  width: 100%;
   margin-bottom: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
-  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inner 0 0 2px rgba(0, 0, 0, 0.1);
-}
-
-input {
-  height: auto !important;
 }
 
 .form-control {
@@ -81,7 +68,7 @@ input {
 
 .content-field {
   height: 90px;
-  width: 980px;
+  width: 956px;
 }
 
 /* 投稿一覧================================ */
