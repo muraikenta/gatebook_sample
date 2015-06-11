@@ -3,16 +3,16 @@ source 'https://rubygems.org'
 # railsのgem
 gem 'rails', '4.2.1'
 # sqlite3データベースのgem
-gem 'sqlite3'
+gem 'sqlite3', '1.3.10'
 # SCSSスタイルシートのgem
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '5.0.3'
 # JavaScript assetの圧縮用のgem
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '2.7.1'
 # CoffeeScriptのgem
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '4.1.0'
 # jQueryのgem
-gem 'jquery-rails'
+gem 'jquery-rails', '4.0.3'
 # Turbolinksのgem
-gem 'turbolinks'
+gem 'turbolinks', '2.5.3'
 # rails consoleを使いやすくするgem
-gem 'pry-rails'
+gem 'pry-rails', '0.3.4'
