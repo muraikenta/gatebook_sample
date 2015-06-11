@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'hirb'
+gem 'hirb', '0.7.3'
 # railsのgem
 gem 'rails', '4.2.1'
 # sqlite3データベースのgem
