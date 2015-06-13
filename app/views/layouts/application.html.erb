@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gatebook | 記事投稿SNSサービス</title>
+  <title>Gatebook</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,14 +10,12 @@
   <header class="navbar">
     <div class="container">
       <div id="logo">Gatebook</div>
-      <nav>
-        <ul class="header-right">
-          <li><%= link_to "Top", root_path %></li>
-          <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "New", notes_new_path %></li>
-          <li><%= link_to "Index", notes_path %></li>
-        </ul>
-      </nav>
+      <ul class="header-right">
+        <li><%= link_to "Top", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "New", notes_new_path %></li>
+        <li><%= link_to "Index", notes_path %></li>
+      </ul>
     </div>
   </header>
   
@@ -27,9 +25,9 @@
 
   <div class="container">
     <footer class="footer">
-      <small>
+      <div class="small">
         &copy; 2015 Progate, Inc.
-      </small>
+      </div>
     </footer>
   </div>
 </body>
