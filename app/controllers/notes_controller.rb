@@ -2,7 +2,7 @@ class NotesController < ApplicationController
   def new
   end
   
-  # crateアクションを作成してください
+  # createアクションを作成してください
   
   
 end
