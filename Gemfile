@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'hirb', '0.7.3'
+# hirbの出力を日本語に対応させるgem
+gem 'hirb-unicode'
 # railsのgem
 gem 'rails', '4.2.1'
 # sqlite3データベースのgem
