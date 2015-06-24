@@ -9,8 +9,7 @@ class NotesController < ApplicationController
   end
 
   def new
-    # Noteインスタンスを生成して、@noteに代入してください
-    
+    @note = Note.new
   end
 
   def create
