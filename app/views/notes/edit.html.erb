@@ -1,4 +1,5 @@
 <h1>投稿を編集する</h1>
+<!-- 以下のフォーム部分を全て削除し、renderメソッドを用いてnotes/_form.html.erbを呼び出してください -->
 <%= form_tag note_path(@note.id), method: 'patch' do %>
   タイトル
   <%= text_field_tag :title, @note.title, class: "form-control title-field" %>

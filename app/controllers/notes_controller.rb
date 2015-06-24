@@ -25,6 +25,7 @@ class NotesController < ApplicationController
   end
 
   def update
+    # 以下のparamsをform_forに合わせて書き換えてください
     @note.title = params[:title]
     @note.content = params[:content]
     @note.save
