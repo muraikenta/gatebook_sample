@@ -25,9 +25,8 @@ class NotesController < ApplicationController
   end
 
   def update
-    # 以下のparamsをform_forに合わせて書き換えてください
-    @note.title = params[:title]
-    @note.content = params[:content]
+    @note.title = params[:note][:title]
+    @note.content = params[:note][:content]
     @note.save
     redirect_to note_path(@note.id)
   end
