@@ -1,5 +1,7 @@
 <h1>新規投稿する</h1>
 <%= form_tag notes_path do %>
+  <!-- エラーメッセージを表示するためのコードを貼り付けてください -->
+  
   タイトル
   <%= text_field_tag 'note[title]', @note.title, class: "form-control title-field" %>
   内容
