@@ -15,6 +15,7 @@ class NotesController < ApplicationController
   def create
     @note = Note.new(note_params)
     if @note.save
+      # redirect_toの第二引数で、noticeを設定してください
       redirect_to note_path(@note.id)
     else
       render :new
