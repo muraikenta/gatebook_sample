@@ -15,7 +15,7 @@ class NotesController < ApplicationController
     @note.title = params[:title]
     @note.content = params[:content]
     @note.save
-    redirect_to note_path(@note)
+    redirect_to note_path(@note.id)
   end
 
   def edit
