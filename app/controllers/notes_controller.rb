@@ -13,6 +13,7 @@ class NotesController < ApplicationController
 
   def create
     @note = Note.new(note_params)
+    # if〜else文を用いて処理を分岐してください
     @note.save
     redirect_to note_path(@note.id)
   end
