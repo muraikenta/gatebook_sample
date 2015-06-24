@@ -25,6 +25,7 @@ class NotesController < ApplicationController
   end
 
   def update
+    # updateアクションを書き換えてください
     @note.title = params[:note][:title]
     @note.content = params[:note][:content]
     @note.save
