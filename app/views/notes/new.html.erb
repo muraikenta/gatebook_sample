@@ -5,7 +5,7 @@
       <h2><%= @note.errors.count %>件のエラー:</h2>
 
       <ul>
-        <% @notes.errors.full_messages.each do |message| %>
+        <% @note.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>
