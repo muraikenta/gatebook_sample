@@ -12,9 +12,10 @@ class NotesController < ApplicationController
   end
 
   def create
+    # newの引数をnote_paramsに変更してください
     @note = Note.new(title: params[:title], content: params[:content])
     @note.save
-    redirect_to note_path(@note)
+    redirect_to note_path(@note.id)
   end
 
   def edit
@@ -37,4 +38,7 @@ class NotesController < ApplicationController
     def set_note
       @note = Note.find(params[:id])
     end
+
+    # note_paramsを定義してください
+
 end
