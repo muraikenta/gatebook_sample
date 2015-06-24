@@ -12,7 +12,9 @@ class NotesController < ApplicationController
   end
 
   def create
+    # newの引数にハッシュを入れてください
     @note = Note.new
+    # 以下の二行を削除してください
     @note.title = params[:title]
     @note.content = params[:content]
     @note.save
