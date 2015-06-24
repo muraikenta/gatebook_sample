@@ -1,7 +1,17 @@
 <h1>新規投稿する</h1>
 <%= form_tag notes_path do %>
-  <!-- エラーメッセージを表示するためのコードを貼り付けてください -->
-  
+  <% if @note.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @note.errors.count %>件のエラー:</h2>
+
+      <ul>
+        <% @notes.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   タイトル
   <%= text_field_tag 'note[title]', @note.title, class: "form-control title-field" %>
   内容
