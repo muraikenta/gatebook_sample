@@ -15,7 +15,7 @@ class NotesController < ApplicationController
   def create
     @note = Note.new(note_params)
     if @note.save
-      redirect_to note_path(@note.id), notice: "投稿が保存されました"
+      redirect_to @note, notice: "投稿が保存されました"
     else
       render :new
     end
