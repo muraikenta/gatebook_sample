@@ -1,6 +1,4 @@
 class Note < ActiveRecord::Base
-  # titleカラムにバリデーションを設定してください。
-
-  # contentカラムにバリデーションを設定してください。
-
+  validates :title, presence: true
+  validates :content, presence: true, length: { maximum: 140 }
 end
