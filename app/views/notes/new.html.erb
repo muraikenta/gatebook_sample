@@ -13,10 +13,8 @@
   <% end %>
 
   タイトル
-  <!-- 以下のtext_field_tagをf.text_fieldを用いて書き換えてください -->
-  <%= text_field_tag 'note[title]', @note.title, class: "form-control title-field" %>
+  <%= f.text_field :title, { class: "form-control title-field" } %>
   内容
-  <!-- 以下のtext_area_tagをf.text_areaを用いて書き換えてください -->
-  <%= text_area_tag 'note[content]', @note.content, class: "form-control content-field" %>
+  <%= f.text_area :content, { class: "form-control content-field" } %>
   <input type="submit" value="投稿する" class="btn primary-btn">
 <% end %>
