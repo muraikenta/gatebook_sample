@@ -25,11 +25,11 @@ class NotesController < ApplicationController
   end
 
   def update
-    # updateアクションを書き換えてください
-    @note.title = params[:note][:title]
-    @note.content = params[:note][:content]
-    @note.save
-    redirect_to note_path(@note.id)
+    if @note.update(note_params)
+      redirect_to @note, notice: "投稿が更新されました"
+    else
+      render :edit
+    end
   end
 
   def destroy
