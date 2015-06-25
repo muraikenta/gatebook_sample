@@ -1,5 +1,5 @@
 <h1>新規投稿する</h1>
-<%= form_for @note do |f| %>
+<%= form_for (@note) do |f| %>
   <% if @note.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">
       <h2><%= @note.errors.count %>件のエラー:</h2>
