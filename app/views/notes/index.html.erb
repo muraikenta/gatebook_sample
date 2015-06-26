@@ -2,7 +2,10 @@
 <ul class="notes">
   <% @notes.each do |note| %>
     <li>
-      <p>タイトル</p>
+      <span class="user-name">
+        <!-- belongs_toで定義した関係性を用いてユーザーの名前を表示してください -->
+
+      </span>
       <span class="content">
         <%= link_to note.title, note_path(note.id) %>
       </span>
