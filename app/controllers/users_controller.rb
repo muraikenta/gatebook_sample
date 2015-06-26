@@ -6,8 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    # has_manyで定義した関係性を用いて以下を書き換えてください
-    @notes = Note.where(user_id: @user.id)
+    @notes = @user.notes
   end
 
   def new
