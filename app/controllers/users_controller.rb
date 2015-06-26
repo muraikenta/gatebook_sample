@@ -6,6 +6,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    # @userのidをuser_idとしてもつnoteを@notesに代入してください
+    # (@userはbefore_actionで定義されています)
+
   end
 
   def new
