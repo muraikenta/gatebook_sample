@@ -44,6 +44,7 @@ class NotesController < ApplicationController
     end
 
     def note_params
+      # ストロングパラメータで許可するカラムにuser_idを追加してください
       params.require(:note).permit(:title, :content)
     end
 end
