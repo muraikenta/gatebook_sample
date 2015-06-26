@@ -6,9 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    # @userのidをuser_idとしてもつnoteを@notesに代入してください
-    # (@userはbefore_actionで定義されています)
-
+    @notes = Note.where(user_id: @user.id)
   end
 
   def new
