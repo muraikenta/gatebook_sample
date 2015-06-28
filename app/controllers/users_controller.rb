@@ -18,9 +18,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    # アップロードされた画像をparams[:note][:image]から受け取り変数fileに代入してください
-
-    # set_imageメソッドを呼び出してください
+    file = params[:note][:image]
+    @user.set_image(file)
 
     if @user.save
       redirect_to @user, notice: 'ユーザーが保存されました'
@@ -30,9 +29,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    # アップロードされた画像をparams[:note][:image]から受け取り変数fileに代入してください
-
-    # set_imageメソッドを呼び出してください
+    file = params[:note][:image]
+    @user.set_image(file)
 
     if @user.update(user_params)
       redirect_to @user, notice: 'ユーザー情報が更新されました'
