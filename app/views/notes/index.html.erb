@@ -2,6 +2,8 @@
 <ul class="notes">
   <% @notes.each do |note| %>
     <li>
+      <!-- image_forヘルパーを用いて、このnoteを投稿したユーザーの画像を表示してください -->
+
       <span class="user-name">
         <%= note.user.name %>
       </span>
