@@ -20,8 +20,8 @@
 </aside>
 
 <ul class="notes">
-  <!-- 以下3行をコピーしてnotes/_note.html.erbに移し、renderメソッドで呼び出すようにしてください -->
   <% @notes.each do |note| %>
+    <!-- 以下の行をコピーしてnotes/_note.html.erbに移し、renderメソッドで呼び出すようにしてください -->
     <li><%= link_to note.title, note %></li>
   <% end %>
 </ul>
