@@ -20,8 +20,5 @@
 </aside>
 
 <ul class="notes">
-  <!-- 以下のeachメソッドの部分を削除し、renderには@notesを渡すようにしてください -->
-  <% @notes.each do |note| %>
-    <%= render 'notes/note', note: note %>
-  <% end %>
+  <%= render @notes %>
 </ul>
