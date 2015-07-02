@@ -42,6 +42,6 @@ class NotesController < ApplicationController
     redirect_to notes_path
   end
 
-  # set_noteメソッドをprivateメソッドとして定義してださい
+  # set_noteメソッドをprivateメソッドとして定義してください
 
 end
