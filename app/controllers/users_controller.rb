@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    file = params[:note][:image]
+    file = params[:user][:image]
     @user.set_image(file)
 
     if @user.save
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    file = params[:note][:image]
+    file = params[:user][:image]
     @user.set_image(file)
 
     if @user.update(user_params)
