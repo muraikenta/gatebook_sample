@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-# 以下に、deviseのgemを追加してください
-
+gem 'devise', '3.5.1'
 
 gem 'hirb', '0.7.3'
 # railsのgem
