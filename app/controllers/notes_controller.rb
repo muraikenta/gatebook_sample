@@ -1,4 +1,7 @@
 class NotesController < ApplicationController
+  # beforeアクションにauthenticate_userを指定してください
+
+  
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
   def index
