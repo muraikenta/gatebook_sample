@@ -1,4 +1,11 @@
 module UsersHelper
-  # 以下にimage_forメソッドを定義してください
+  
+  def image_for(user)
+    if user.image
+      image_tag "/user_images/#{user.image}"
+    else
+      image_tag "/wanko.png"
+    end
+  end
   
 end
