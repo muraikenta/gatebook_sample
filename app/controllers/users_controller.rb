@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
+  # beforeアクションでcorrect_userメソッドを呼び出してください
+
+
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -33,4 +36,8 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email)
     end
+
+    # correct_userメソッドを定義してください。
+
+
 end
