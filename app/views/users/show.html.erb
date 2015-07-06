@@ -1,7 +1,10 @@
-<p id="notice" class="alert alert-success"><%= notice %></p>
-
-<aside class="sidebar">
-  <!-- 以下に指定されたコードを貼り付け、このユーザーのimage_forヘルパーを呼び出してください -->
+<aside class="sidebar">  
+  <section>
+    <span class="label">プロフィール画像</span>
+    <h3 class="user-info">
+      <%= image_for(@user) %>
+    </h3>
+  </section>
   
   <section>
     <span class="label">ユーザー</span>
