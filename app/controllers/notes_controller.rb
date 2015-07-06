@@ -19,11 +19,8 @@ class NotesController < ApplicationController
     if @note.save
       redirect_to @note, notice: "投稿が保存されました"
     else
-      # @notesを定義してください
-      
-      # render先がhomeコントローラのtopアクションになるように変更してください
-      render :new
-
+      @notes = Note.all.order(created_at: :desc)
+      render 'home/top'
     end
   end
 
