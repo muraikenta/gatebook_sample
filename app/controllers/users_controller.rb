@@ -10,6 +10,7 @@ class UsersController < ApplicationController
     @notes = @user.notes
   end
 
+  # newアクションを削除してください
   def new
     @user = User.new
   end
@@ -17,6 +18,7 @@ class UsersController < ApplicationController
   def edit
   end
 
+  # createアクションを削除してください
   def create
     @user = User.new(user_params)
     file = params[:user][:image]
@@ -40,6 +42,7 @@ class UsersController < ApplicationController
     end
   end
 
+  # destroyアクションを削除してください
   def destroy
     @user.destroy
     redirect_to users_url, notice: 'ユーザーが削除されました'
