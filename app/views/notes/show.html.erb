@@ -3,8 +3,9 @@
 <h2>内容</h2>
 <p><%= @note.content %></p>
 
-<!-- likesコントローラのlikeアクションへのリンクを作成してください -->
-
+<div id='like-link'>
+<%= link_to 'いいね！', like_path(@note.id), method: :post %>
+</div>
 
 <% if current_user?(@note.user) %>
   <%= link_to "編集", edit_note_path(@note.id), class: "btn edit-btn" %>
