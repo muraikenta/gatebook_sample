@@ -10,25 +10,7 @@ class UsersController < ApplicationController
     @notes = @user.notes
   end
 
-  # newアクションを削除してください
-  def new
-    @user = User.new
-  end
-
   def edit
-  end
-
-  # createアクションを削除してください
-  def create
-    @user = User.new(user_params)
-    file = params[:user][:image]
-    @user.set_image(file)
-
-    if @user.save
-      redirect_to @user, notice: 'ユーザーが保存されました'
-    else
-      render :new
-    end
   end
 
   def update
@@ -40,12 +22,6 @@ class UsersController < ApplicationController
     else
       render :edit
     end
-  end
-
-  # destroyアクションを削除してください
-  def destroy
-    @user.destroy
-    redirect_to users_url, notice: 'ユーザーが削除されました'
   end
 
   private
