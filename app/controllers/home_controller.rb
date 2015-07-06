@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   def top
-    @message = "ようこそGatebookへ！"
+    # if~else文を貼り付けてください
+    
+    
   end
   
   def about
