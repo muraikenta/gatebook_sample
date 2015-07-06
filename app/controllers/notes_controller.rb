@@ -1,7 +1,6 @@
 class NotesController < ApplicationController
   before_action :authenticate_user!
-  # beforeアクションを用いてcorrect_userメソッドを呼び出してください
-  
+  before_action :correct_user, only: [:edit, :update]
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -50,7 +49,11 @@ class NotesController < ApplicationController
       params.require(:note).permit(:title, :content, :user_id)
     end
 
-    # correct_userメソッドのコードを貼り付けてください
-
+    def correct
+      note = Note.find(params[:id])
+      if !current_user?(note.user)
+        redirect_to root_path, alert: '許可されていないページです'
+      end
+    end
 
 end
