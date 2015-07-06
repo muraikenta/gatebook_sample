@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20150626001135) do
     t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "image"
   end
 
 end
