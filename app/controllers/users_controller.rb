@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    # アップロードされた画像をparams[:note][:image]から受け取り変数fileに代入してください
+    # アップロードされた画像をparams[:user][:image]から受け取り変数fileに代入してください
 
     # set_imageメソッドを呼び出してください
 
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    # アップロードされた画像をparams[:note][:image]から受け取り変数fileに代入してください
+    # アップロードされた画像をparams[:user][:image]から受け取り変数fileに代入してください
 
     # set_imageメソッドを呼び出してください
 

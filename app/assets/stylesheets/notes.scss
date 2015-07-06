@@ -1,31 +1,30 @@
 /* 投稿一覧 ================================ */
 .notes {
   margin: 0;
+  float: left;
+  width: 60%;
 }
 
 .notes li {
   overflow: auto;
-  padding: 10px 0;
+  padding: 14px 0;
   border-bottom: 1px solid #eaeaea;
 }
 
 /* 投稿 ================================ */
-.notes li {
-  padding: 10px 0;
-}
-
-.notes .title, .notes .content, .notes .user-name {
+.notes .title, .notes .content {
   display: block;
 }
 
-.notes .title, .notes .user-name {
+.notes .title {
   padding-top: 8px;
 }
 .notes img {
   display: inline-block;
-  padding: 5px 0;
-  margin-right: 5px;
+  margin-right: 12px;
   float: left;
+  width: 56px;
+  height: 56px;
 }
 
 aside textarea {
