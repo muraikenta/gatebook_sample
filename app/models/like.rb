@@ -1,7 +1,5 @@
 class Like < ActiveRecord::Base
-  # usersテーブルとの関係性を定義してください
+  belongs_to :user
+  belongs_to :note
 
-  # notesテーブルとの関係性を定義してください
-
-  
 end

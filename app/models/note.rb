@@ -1,6 +1,6 @@
 class Note < ActiveRecord::Base
   belongs_to :user
-  # likesテーブルとの関係性を定義してください
+  has_many :likes
 
   validates :title, presence: true
   validates :content, presence: true, length: { maximum: 140 }

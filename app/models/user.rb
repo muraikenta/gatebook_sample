@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :rememberable, :validatable
   has_many :notes
-  # likesテーブルとの関係性を定義してください
+  has_many :likes
 
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
