@@ -1,5 +1,7 @@
 class NotesController < ApplicationController
   before_action :authenticate_user!
+  # beforeアクションを用いてcorrect_userメソッドを呼び出してください
+  
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -47,4 +49,8 @@ class NotesController < ApplicationController
     def note_params
       params.require(:note).permit(:title, :content, :user_id)
     end
+
+    # correct_userメソッドのコードを貼り付けてください
+
+
 end
