@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
-  # beforeアクションでcorrect_userメソッドを呼び出してください
-
-
+  before_action :correct_user, only: [:edit, :update]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -37,7 +35,10 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email)
     end
 
-    # correct_userメソッドを定義してください。
-
-
+    def correct_user
+      user = User.find(params[:id])
+      if current_user.id != user.id
+        redirect_to root_path, alert: '許可されていないページです'
+      end
+    end
 end
