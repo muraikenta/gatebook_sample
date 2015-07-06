@@ -15,6 +15,7 @@ class NotesController < ApplicationController
   end
 
   def create
+    # 以下を、buildメソッドを用いて書き換えてください
     @note = Note.new(note_params)
     if @note.save
       redirect_to @note, notice: "投稿が保存されました"
@@ -45,6 +46,7 @@ class NotesController < ApplicationController
       @note = Note.find(params[:id])
     end
 
+    # user_idをフォームから受けとらないように変更してください
     def note_params
       params.require(:note).permit(:title, :content, :user_id)
     end
