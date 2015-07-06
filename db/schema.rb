@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150705100054) do
+ActiveRecord::Schema.define(version: 20150706081449) do
 
   create_table "notes", force: :cascade do |t|
     t.string   "title"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20150705100054) do
     t.datetime "updated_at",                       null: false
     t.string   "encrypted_password",  default: "", null: false
     t.datetime "remember_created_at"
+    t.string   "image"
   end
 
 end
