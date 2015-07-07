@@ -2,6 +2,7 @@ class LikesController < ApplicationController
   def like
     # 変数noteを変数@noteに変更してください
     note = Note.find(params[:note_id])
+    # note.idの部分を@noteで書き換えてください
     like = current_user.likes.build(note_id: note.id)
     like.save
   end
