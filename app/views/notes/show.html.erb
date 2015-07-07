@@ -13,10 +13,7 @@
 
 <div>
   <small>
-    <!-- @note.likes.countの部分をliking_users一覧へのリンクにしてください -->
-    <%= @note.likes.count %>人がいいね！といっています
-
-    
+    <%= link_to @note.likes.count, liking_users_note_path(@note.id) %>人がいいね！といっています
   </small>
 </div>
 
