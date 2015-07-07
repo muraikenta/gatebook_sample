@@ -1,7 +1,6 @@
 <h1 class="heading">ユーザー一覧</h1>
 
 <ul class="user-list">
-  <!-- 以下の不要な部分を削除し、renderで書き換えてください -->
   <% @users.each do |user| %>
     <li>
       <%= image_for(user) %>
@@ -9,5 +8,4 @@
       <%= user.email %>
     </li>
   <% end %>
-  <!-- 削除部分ここまで -->
 </ul>
