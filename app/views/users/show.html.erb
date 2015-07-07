@@ -16,10 +16,7 @@
     <h3 class="user-info"><%= @user.email %></h3>
   </section>
 
-  <!-- ユーザーのいいね！の数を表示するコードを貼り付けてください -->
-
-  
-
+  <%= @user.likes.count %>個の投稿にいいね!しています
 
   <% if current_user?(@user) %>
     <section>
