@@ -1,17 +1,9 @@
 class LikesController < ApplicationController
   def like
-    # 変数noteに、newメソッドを用いてNoteインスタンスを代入してください
-
-
-    # 変数likeに、current_userとbuildを用いてLikeインスタンスを代入してください
-
-
-    # saveメソッドで、likeを保存してください
-
-
-    # 最後に、notesコントローラののshowアクションにリダイレクトしてください
-    
-
+    note = Note.find(params[:note_id])
+    like = current_user.likes.build(note_id: note.id)
+    like.save
+    redirect_to note    
   end
 
   def dislike
