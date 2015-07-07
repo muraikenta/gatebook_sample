@@ -4,11 +4,13 @@
 <p><%= @note.content %></p>
 
 <div id="like-link">
+  <!-- 以下をパーシャルに移動してください -->
   <% if current_user.likes.find_by(note_id: @note.id) %>
     <%= link_to 'いいね！を取り消す', dislike_path(@note.id), method: :post, remote: true %>
   <% else %>
     <%= link_to 'いいね！', like_path(@note.id), method: :post, remote: true %>
   <% end %>
+  <!-- ここまでパーシャルに移動 -->
 </div>
 
 <div>
