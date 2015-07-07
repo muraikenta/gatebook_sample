@@ -6,8 +6,7 @@
 <div id='like-link'>
   <% if current_user.likes.find_by(note_id: @note.id) %>
     <!-- 「いいね済み」の部分を「いいね！を取り消す」というリンクに書き換えてください -->
-    いいね済み
-
+    <%= link_to 'いいね！を取り消す', dislike_path(@note.id), method: :post %>
   <% else %>
     <%= link_to 'いいね！', like_path(@note.id), method: :post %>
   <% end %>
