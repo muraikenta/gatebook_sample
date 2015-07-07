@@ -3,6 +3,7 @@ class LikesController < ApplicationController
     note = Note.find(params[:note_id])
     like = current_user.likes.build(note_id: note.id)
     like.save
+    # リダイレクト部分を削除してください
     redirect_to note    
   end
 
