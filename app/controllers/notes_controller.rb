@@ -40,6 +40,11 @@ class NotesController < ApplicationController
     redirect_to notes_path
   end
 
+  # liking_usersアクションを定義してください
+
+
+  
+
   private
 
     def set_note
