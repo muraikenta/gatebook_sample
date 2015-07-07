@@ -6,9 +6,11 @@ class LikesController < ApplicationController
   end
 
   def dislike
+    # 変数noteを変数@noteに書き換えてください
     note = Note.find(params[:note_id])
     like = current_user.likes.find_by(note_id: note.id)
     like.destroy
+    # リダイレクト部分を削除してください
     redirect_to note
   end
 end
