@@ -16,7 +16,9 @@
     <h3 class="user-info"><%= @user.email %></h3>
   </section>
 
+  <!-- @user.likes.countの部分をリンクに書き換えてください -->
   <%= @user.likes.count %>個の投稿にいいね!しています
+
 
   <% if current_user?(@user) %>
     <section>
