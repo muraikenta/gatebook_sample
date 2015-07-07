@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
   before_action :correct_user, only: [:edit, :update]
+  # before_action :set_userにlike_notesを追加してください
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
 
   def index
     @users = User.all
@@ -9,6 +11,9 @@ class UsersController < ApplicationController
 
   def show
     @notes = @user.notes
+    # @titleを「投稿一覧」となるように定義してください
+
+    
   end
 
   def edit
@@ -26,6 +31,14 @@ class UsersController < ApplicationController
   end
 
   def like_notes
+    # @userのゲッターを用いて、ユーザーのlike_notesを取得し、変数@notesに代入してください
+
+
+    # @titleを定義してください
+
+
+    # showアクションをrenderしてください
+
     
   end
 

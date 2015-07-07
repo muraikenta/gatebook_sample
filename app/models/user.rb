@@ -6,6 +6,10 @@ class User < ActiveRecord::Base
   has_many :notes
   has_many :likes
 
+  # Userとlike_notesの関係性を定義してください
+  
+
+
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
 
