@@ -4,7 +4,8 @@
 <p><%= @note.content %></p>
 
 <div id='like-link'>
-<%= link_to 'いいね！', like_path(@note.id), method: :post %>
+  <!-- 以下のコードを削除し、コードを貼り付けてください -->
+  <%= link_to 'いいね！', like_path(@note.id), method: :post %>
 </div>
 
 <% if current_user?(@note.user) %>
