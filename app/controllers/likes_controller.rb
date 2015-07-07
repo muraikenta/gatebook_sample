@@ -1,6 +1,6 @@
 class LikesController < ApplicationController
   def like
-    # 変数noteに、newメソッドを用いてNoteインスタンスを代入してください
+    # 変数noteに、findメソッドを用いてNoteインスタンスを取得し、代入してください
 
 
     # 変数likeに、current_userとbuildを用いてLikeインスタンスを代入してください
