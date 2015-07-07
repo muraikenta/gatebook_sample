@@ -1,6 +1,7 @@
 class NotesController < ApplicationController
   before_action :authenticate_user!
   before_action :correct_user, only: [:edit, :update]
+  # before_actionにliking_usersを追加してください
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
   def index
