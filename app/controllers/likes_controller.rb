@@ -1,7 +1,7 @@
 class LikesController < ApplicationController
   def like
-    note = Note.find(params[:note_id])
-    like = current_user.likes.build(note_id: note.id)
+    @note = Note.find(params[:note_id])
+    like = current_user.likes.build(note_id: @note.id)
     like.save
   end
 
