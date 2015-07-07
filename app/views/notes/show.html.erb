@@ -3,7 +3,8 @@
 <h2>内容</h2>
 <p><%= @note.content %></p>
 
-<div id='like-link'>
+<!-- <div>タグに「like-link」というidをつけてください -->
+<div>
   <% if current_user.likes.find_by(note_id: @note.id) %>
     <%= link_to 'いいね！を取り消す', dislike_path(@note.id), method: :post %>
   <% else %>
@@ -13,7 +14,9 @@
 
 <div>
   <small>
+    <!-- link_toに「like-count」というidをつけてください -->
     <%= link_to @note.likes.count, liking_users_note_path(@note.id) %>人がいいね！といっています
+    
   </small>
 </div>
 
