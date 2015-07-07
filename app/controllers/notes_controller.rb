@@ -1,7 +1,7 @@
 class NotesController < ApplicationController
   before_action :authenticate_user!
   before_action :correct_user, only: [:edit, :update]
-  before_action :set_note, only: [:show, :edit, :update, :destroy]
+  before_action :set_note, only: [:show, :edit, :update, :destroy, :liking_users]
 
   def index
     @notes = Note.all
@@ -40,10 +40,11 @@ class NotesController < ApplicationController
     redirect_to notes_path
   end
 
-  # liking_usersアクションを定義してください
+  def liking_users
+    @users = @note.liking_users
+  end
 
 
-  
 
   private
 
