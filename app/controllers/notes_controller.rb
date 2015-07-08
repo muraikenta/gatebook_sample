@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
   # before_actionを設定してください
-
+  
   def index
     @notes = Note.all
   end
@@ -43,5 +43,5 @@ class NotesController < ApplicationController
   end
 
   # set_noteメソッドをprivateメソッドとして定義してください
-
+  
 end
