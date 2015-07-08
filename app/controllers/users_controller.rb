@@ -31,9 +31,9 @@ class UsersController < ApplicationController
 
   def update
     # アップロードされた画像をparams[:user][:image]から受け取り変数fileに代入してください
-
+    
     # set_imageメソッドを呼び出してください
-
+    
     if @user.update(user_params)
       redirect_to @user, notice: 'ユーザー情報が更新されました'
     else
