@@ -40,5 +40,5 @@ class NotesController < ApplicationController
     end
 
     # note_paramsを定義してください
-
+    
 end
