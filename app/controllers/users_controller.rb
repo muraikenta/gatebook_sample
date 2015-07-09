@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   # beforeアクションにauthenticate_user!メソッドを追加してください
-  
+    
 
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
