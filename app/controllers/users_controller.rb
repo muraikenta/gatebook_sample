@@ -26,9 +26,9 @@ class UsersController < ApplicationController
   end
 
   # like_notesアクションを定義してください
-
   
-
+  
+  
   private
 
     def set_user
