@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def show
     @notes = @user.notes
     # @titleを「投稿一覧」となるように定義してください
-
+    
     
   end
 
@@ -32,13 +32,13 @@ class UsersController < ApplicationController
 
   def like_notes
     # @userのゲッターを用いて、ユーザーのlike_notesを取得し、変数@notesに代入してください
-
-
+    
+    
     # @titleを定義してください
-
-
+    
+    
     # showアクションをrenderしてください
-
+    
     
   end
 
