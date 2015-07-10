@@ -23,7 +23,7 @@ class NotesController < ApplicationController
       
       # render先がhomeコントローラのtopアクションになるように変更してください
       render :new
-
+      
     end
   end
 
