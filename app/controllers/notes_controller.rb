@@ -21,7 +21,7 @@ class NotesController < ApplicationController
     else
       # @notesを定義してください
       
-      # render先がhomeコントローラのtopアクションになるように変更してください
+      # renderを用いて、home/top.html.erbが表示されるようにしてください
       render :new
       
     end
