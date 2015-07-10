@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   resources :notes, only: [:show, :create, :edit, :update, :destroy]
 
   # likeアクションへのルーティングを定義してください
-
+  
 
   # dislikeアクションへのルーティングを定義してください。
-
+  
 
   root 'home#top'
   get '/about' => 'home#about'
