@@ -51,6 +51,6 @@ class NotesController < ApplicationController
     end
 
     # correct_userメソッドのコードを貼り付けてください
-
-
+    
+    
 end
