@@ -8,8 +8,8 @@ class User < ActiveRecord::Base
 
   # Userとlike_notesの関係性を定義してください
   
-
-
+  
+  
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
 
