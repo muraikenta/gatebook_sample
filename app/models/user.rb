@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :rememberable, :validatable
   has_many :notes
 
+
+  #後の演習にてdeviseでnameを登録できるようにするまで、一時的にnameのバリデーションをコメントアウトしています
   # validates :name, presence: true
   validates :email, presence: true, uniqueness: true
 
