@@ -21,7 +21,7 @@ class NotesController < ApplicationController
     else
       # @notesを定義してください
       
-      # renderを用いて、home/top.html.erbが表示されるようにしてください
+      # renderメソッドで表示するビューが、views/home/top.html.erbになるように変更してください
       render :new
       
     end
