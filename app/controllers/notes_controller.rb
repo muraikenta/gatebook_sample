@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
   # beforeアクションにauthenticate_user!メソッドを追加してください
-
+  
   
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
