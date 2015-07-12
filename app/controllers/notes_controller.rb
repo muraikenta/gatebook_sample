@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
   before_action :authenticate_user!
-  # beforeアクションを用いてcorrect_userメソッドを呼び出してください
+  # before_actionを用いてcorrect_userメソッドを呼び出してください
   
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
