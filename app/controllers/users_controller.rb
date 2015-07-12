@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
-  # beforeアクションでcorrect_userメソッドを呼び出してください
+  # before_actionでcorrect_userメソッドを呼び出してください
   
   
   before_action :set_user, only: [:show, :edit, :update, :destroy]
