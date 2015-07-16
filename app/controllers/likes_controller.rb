@@ -6,18 +6,9 @@ class LikesController < ApplicationController
     redirect_to note    
   end
 
-  def dislike
-    # findメソッドを用いてNoteインスタンスを取得し、変数noteに代入してください
-    
-    
-    # current_userとfind_byメソッドでLikeインスタンスを取得してください
-    
-    
-    # Likeインスタンスを削除してください
-    
-    
-    # notesコントローラのshowアクションにリダイレクトしてください
-    
+  def unlike
+    # ここにコードを貼り付けてください
+	    
     
   end
 end
