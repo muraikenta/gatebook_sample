@@ -7,7 +7,7 @@ class LikesController < ApplicationController
     like.save
   end
 
-  def dislike
+  def unlike
     note = Note.find(params[:note_id])
     like = current_user.likes.find_by(note_id: note.id)
     like.destroy
