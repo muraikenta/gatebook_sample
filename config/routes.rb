@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # likeアクションへのルーティングを定義してください
   
 
-  # dislikeアクションへのルーティングを定義してください。
+  # unlikeアクションへのルーティングを定義してください。
   
 
   root 'home#top'
