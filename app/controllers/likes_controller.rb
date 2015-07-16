@@ -5,7 +5,7 @@ class LikesController < ApplicationController
     like.save
   end
 
-  def dislike
+  def unlike
     # 変数noteを変数@noteに書き換えてください
     note = Note.find(params[:note_id])
     like = current_user.likes.find_by(note_id: note.id)
