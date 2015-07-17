@@ -8,7 +8,7 @@ class LikesController < ApplicationController
 
   def unlike
     # ここにコードを貼り付けてください
-	    
+    
     
   end
 end
